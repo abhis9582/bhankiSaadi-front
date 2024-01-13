@@ -1,0 +1,50 @@
+.list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 0;
+}
+
+.list li {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list li:hover {
+    color: yellow;
+}
+.list li a:hover {
+    color: yellow;
+}
+
+.list li a:active {
+    color: yellow;
+}
+
+.list li a {
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    color: aliceblue;
+    font-size: 10px;
+}
+
+.logo h6 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #07fb07;
+}
+
+.logo span {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+hr {
+    background: red;
+    height: 1px;
+}
