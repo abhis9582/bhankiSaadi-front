@@ -1,10 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import Header from '../header/header'
 import Footer from '../footer/footer'
+import {getdata} from '../services/api'
 const Login = () => {
 
     const navigate = useNavigate();
+    const apiUrl = process.env.REACT_APP_API_URL;
     const logIn = () => {
+        getdata(apiUrl+'/basic-crud/get');
         navigate('/dashboard')
     }
     const register = () => {
@@ -19,18 +22,18 @@ const Login = () => {
                         <div className="border border-2 border-warning rounded rounded-5">
                             <h1 className="text-center pt-2">Log In</h1>
                             <form className="p-5">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
+                                <div className="form-group">
+                                    <label>Email address</label>
                                     <input type="email" className="form-control bg-dark text-light" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
+                                <div className="form-group">
+                                    <label >Password</label>
                                     <input type="password" className="form-control bg-dark text-light" id="exampleInputPassword1" placeholder="Password" />
                                 </div>
-                                <button type="submit" class="btn btn-primary" onClick={logIn}>Log in</button>
-                                <div class="form-check">
-                                    <label class="form-check-label" for="exampleCheck1">Not have account ?</label><span onClick={register}>Register</span>
+                                <button type="submit" className="btn btn-primary" onClick={logIn}>Log in</button>
+                                <div className="form-check">
+                                    <label className="form-check-label">Not have account ?</label><span onClick={register}>Register</span>
                                 </div>
                             </form>
                         </div>
