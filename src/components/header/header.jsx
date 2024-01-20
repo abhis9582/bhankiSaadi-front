@@ -1,9 +1,12 @@
 import '../header/header.css'
 const header = () => {
+    const handleClick = () =>{
+        window.location.href = '/home'
+    }
     return (
         <div className='container-fluid'>
             <div className="row align-items-center">
-                <div className="col-3 text-start">
+                <div className="col-3 text-start" onClick={handleClick}>
                     <div className="logo pl-2 mt-2">
                         <h6>Bhan</h6>
                         <span>kiSaadi</span>

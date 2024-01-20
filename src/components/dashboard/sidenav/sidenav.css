@@ -1,0 +1,29 @@
+
+.sidenav {
+    min-height: 100vh;
+    background-color: red;
+    padding: 0;
+
+}
+
+.sidebar {
+    width: 100%;
+    background-color: rgb(246, 111, 111);
+
+}
+
+.profile-image {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: auto;
+}
+.options {
+    cursor: pointer;
+}
+
+.options:hover {
+    color: black;
+    background-color: yellow;
+    font-size: larger;
+}
