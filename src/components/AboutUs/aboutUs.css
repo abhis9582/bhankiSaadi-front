@@ -1,0 +1,21 @@
+.container{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.heading
+{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+.container p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.container .para_heading
+{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 15px;
+}

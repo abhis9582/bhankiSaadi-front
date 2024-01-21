@@ -1,3 +1,4 @@
+import React from 'react'
 
 const login = () => {
     return (
@@ -28,4 +29,5 @@ const login = () => {
     );
 }
 
-export default login;
+
+export default login

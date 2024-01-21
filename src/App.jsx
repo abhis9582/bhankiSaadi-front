@@ -1,10 +1,15 @@
-import Home from './components/home/home'
+import React from 'react'
+
+import Home from './components/Home/Home'
 import Login from './components/Login/login'
 import Header from './components/header/header'
 import Register from './components/Register/register'
+import AboutUs from './components/AboutUs/About'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-function App() {
+import Footer from './components/Footer/Footer'
+
+const App = () => {
   return (
     <div className="app">
       <BrowserRouter>
@@ -14,10 +19,13 @@ function App() {
           <Route path='/home' Component={Home} />
           <Route path='/login' Component={Login} />
           <Route path='/register' Component={Register} />
+          <Route path='/About' Component={AboutUs} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
-  );
+    )
 }
 
-export default App;
+export default App
+
