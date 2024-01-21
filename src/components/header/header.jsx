@@ -2,10 +2,13 @@ import '../header/header.css'
 import React from 'react'
 
 const header = () => {
+    const handleClick = () =>{
+        window.location.href = '/home'
+    }
     return (
         <div className='container-fluid'>
             <div className="row align-items-center">
-                <div className="col-3 text-start">
+                <div className="col-3 text-start" onClick={handleClick}>
                     <div className="logo pl-2 mt-2">
                         <h6>Behen</h6>
                         <span>kiShadi</span>

@@ -1,11 +1,7 @@
-import React from 'react'
 
-
-function register() {
-
-  return (
-
-    <div className="container text-center">
+const register = () => {
+    return (
+        <div className="container text-center">
             <div className="row d-flex ">
                 <div className="col p-5 justify-content-center">
                     <div className="border border-2 border-warning rounded rounded-5">
@@ -61,10 +57,11 @@ function register() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
   )
 }
 
 
 
-export default register
+export default register;

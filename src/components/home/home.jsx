@@ -1,11 +1,7 @@
-import React from 'react'
-import './Home.css'
-import image from './images2.png'
-import bgimage from './bgimage.jpg'
-// import bgimage from "./assets/Indian_wedding_Delhi.jpg";
-const Home = () => {
+import '../home/home.css'
+const home = () => {
     return (
-        <div className='mainContainer overlay' style={{height:"100vh", width:"100vw", backgroundImage:`url(${bgimage})`,backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+        <div>
             <div className="container-fluid">
                 <h1 className='text-center text-underline'>Welcome to Bhan kiSaadi</h1>
                 <div className="row text-center m-2">
@@ -42,6 +38,7 @@ const Home = () => {
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus repellat mollitia inventore, harum vitae amet maiores possimus quis ratione non reiciendis aspernatur eum quisquam earum unde? Est impedit provident ex quae, natus fuga iste, laborum nemo soluta odit vero. Omnis incidunt cum architecto praesentium repudiandae, veritatis asperiores, soluta sapiente ipsam quidem accusamus magnam, autem eligendi. Optio expedita id aliquid saepe officiis quo aut autem quam quasi eaque repellat, provident magni atque quia voluptates voluptate! Hic aliquam fugiat et dignissimos excepturi labore nihil ipsa accusantium quidem cum quisquam harum numquam atque, quas nam nesciunt, fuga, adipisci nemo? Aut libero aspernatur repellat amet placeat sequi laboriosam incidunt voluptate, ad totam earum optio accusamus perspiciatis vel cum deserunt quidem recusandae dicta hic magnam nemo pariatur et! Ipsam eaque similique maxime eligendi enim
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

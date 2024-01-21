@@ -47,6 +47,10 @@ hr {
     letter-spacing: 1px;
 }
 
+.logo {
+    cursor: pointer;
+}
+
 hr {
     background: red;
     height: 1px;
