@@ -1,4 +1,6 @@
+import React from 'react';
 import Sidenav from '../dashboard/sidenav/sidenav'
+
 import Maincontent from "./maincontent/maincontent";
 
 const Dashboard = () => {

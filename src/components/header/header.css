@@ -35,7 +35,7 @@ hr {
 .logo h6 {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: white;
     text-transform: uppercase;
     font-weight: 500;
@@ -55,3 +55,81 @@ hr {
     background: red;
     height: 1px;
 }
+.userInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+/* Responsive styles */
+/* @media (max-width: 768px) { */
+    /* Adjust styles for smaller screens */
+    /* .col-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    } */
+  
+    /* .col-9 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .logo {
+      text-align: center;
+    }
+  
+    .userInfo h2 {
+      font-size: 1rem;
+    }
+  
+    .list {
+      justify-content: center;
+    }
+  
+    .list li {
+      margin: 0 10px;
+    }
+  } */
+  .toggle-btn {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .list.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust as needed*/
+    left: 0;
+    width: 100%;
+    background-color: #332f2f;
+    z-index: 1;
+  }
+  
+  .list.show li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .toggle-btn {
+      display: block;
+      font-size: 1.5rem;
+    }
+    .userInfo{
+        display: none;
+    }
+  
+    .list {
+      display: none;
+    }
+  
+    /* .list.show {
+      display: flex;
+    }
+   */
+    .list li {
+      margin: 0;
+    }
+  }

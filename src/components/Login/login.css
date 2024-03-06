@@ -1,0 +1,32 @@
+.row {
+    /* background-color: #fff; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* width: 300px; */
+}
+.showcontainer{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    cursor: pointer;
+    
+    
+}
+.showcontainer input{
+    height: 30px;
+    /* font-size: larger; */
+    margin-top: 10px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.showcontainer label{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 0%;
+    
+    cursor: pointer;
+    /* padding: 0%; */
+}

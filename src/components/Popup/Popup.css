@@ -1,0 +1,30 @@
+/* Popup.css */
+.popup-container {
+  position: absolute;
+  top: 55px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: #2d2a2a;
+  border: 1px solid #ccc;
+  /* padding: 10px; */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color:white;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: #f5f0f0;
+}
+.popup-content a:hover{
+    background-color: #575bd2;
+    
+}

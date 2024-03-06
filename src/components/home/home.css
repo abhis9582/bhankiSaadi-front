@@ -17,15 +17,32 @@
 }
 .imgbox
 {
-    height: 300px;
+    height: auto;
     width: 300px;
-    margin: 20px;
+    /* margin: 20px;
     border-radius: 4px;
-    box-shadow: 12px 12px 2px 1px rgba(215, 73, 118, 0.2);
+    box-shadow: 12px 12px 2px 1px rgba(215, 73, 118, 0.2); */
  
 }
 .imgbox img{
     height: 300px;
     background-size: cover;
+    aspect-ratio: 3/2;
+    object-fit: cover;
     
+}
+
+@media (max-width: 768px) {
+    .img-container {
+        flex-direction: column;
+      }
+    
+      .img-container .col-3 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+   
+      .text {
+        padding: 20px;
+      }
 }
